@@ -1,37 +1,33 @@
 # CASO DE USO
 
-```plantuml
-@startuml
-title Caso de Uso - Sistema de Biblioteca
+
+![Caso de Uso](imgs/diagrama-caso-uso.png)
+
+<!--@startuml
+title Caso de Uso - Find Your Course
 
 left to right direction
 
-actor Usuário
-actor Bibliotecário
-actor "Sistema de Pagamento" as Pagamento
+actor Estudante 
 
-rectangle "Sistema de Biblioteca" {
+rectangle "Aplicação Web" {
 
-  usecase "Realizar Login" as UC1
-  usecase "Pesquisar Livro" as UC2
-  usecase "Emprestar Livro" as UC3
-  usecase "Devolver Livro" as UC4
-  usecase "Pagar Multa" as UC5
-  usecase "Cadastrar Livro" as UC6
+  usecase "Selecionar Interesses" as UC1
+  usecase "Cadastrar Informações" as UC2
+  usecase "Buscar Curso" as UC3
+  usecase "Selecionar Afinidades" as UC4
+  usecase "Visualizar Opções de Cursos" as UC5
+  usecase "Buscar Instituições" as UC6
 
 }
 
-Usuário --> UC1
-Usuário --> UC2
-Usuário --> UC3
-Usuário --> UC4
-Usuário --> UC5
+Estudante -- UC1
+Estudante -- UC2
+Estudante -- UC4
 
-Bibliotecário --> UC6
-Bibliotecário --> UC3
-Bibliotecário --> UC4
 
-UC5 --> Pagamento
-
-@enduml
-```
+UC1 ..> UC3 : <<include>>
+UC2 ..> UC3 : <<include>>
+UC3 <.. UC6 : <<extends>>
+UC3 <.. UC5 : <<extends>>
+@enduml-->

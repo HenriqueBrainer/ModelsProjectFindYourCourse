@@ -1,6 +1,7 @@
 # CASO DE USO
 
-```plantuml
+```
+plantuml
 @startuml
 title Caso de Uso - Sistema de Biblioteca
 

@@ -1,6 +1,5 @@
 # CASO DE USO
 
-
 ![Caso de Uso](imgs/diagrama-caso-uso.png)
 
 <!--@startuml

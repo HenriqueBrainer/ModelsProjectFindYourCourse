@@ -27,7 +27,7 @@ Estudante -- UC4
 
 
 UC1 ..> UC3 : <<include>>
-UC2 ..> UC3 : <<include>>
+UC4 ..> UC3 : <<include>>
 UC3 <.. UC6 : <<extends>>
 UC3 <.. UC5 : <<extends>>
 @enduml-->

@@ -1,6 +1,6 @@
 # CASO DE USO
 
-![Caso de Uso](imgs/diagrama-caso-uso.png)
+![Caso de Uso](imgs/diagrama-caso-de-uso.png)
 
 <!--@startuml
 title Caso de Uso - Find Your Course
